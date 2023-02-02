@@ -62,7 +62,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_10_001132) do
     t.index ["digest"], name: "index_model_files_on_digest"
     t.index ["model_id"], name: "index_model_files_on_model_id"
   end
-
+# Section that creates postgres table for models, needs updated for additional column#
   create_table "models", force: :cascade do |t|
     t.string "name", null: false
     t.string "path", null: false
